@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+
+    Scanner ler = new Scanner(System.in);
+
+    double num1;
+    double maior;
+    double menor;
+    double num2;
+    
+    System.out.printf("Digite um número:");
+    num1 = ler.nextDouble();
+
+    maior = num1;
+    menor = num1;
+
+      for (num2 = 1; num2 <= 15; num2++){
+        System.out.printf("Digite o"+num2+"valor:");
+        num2 = ler.nextDouble();
+
+        System.out.println(num1);
+
+          if (num1 > maior){
+            maior = num1;
+          }
+          else{
+            if(num1 < menor){
+              menor = num1;
+            } 
+          }
+      }
+   System.out.printf("O número menor é:\t"+ maior);
+   System.out.printf("O número menor e:\t" + menor);
+   
+    
+  }
+}
+
+   
+

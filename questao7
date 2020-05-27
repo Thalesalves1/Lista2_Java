@@ -1,0 +1,65 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+
+    Scanner ler = new Scanner(System.in);
+
+    double maior;
+    double menor;
+    double soma;
+    double media;
+    double cont;
+    
+
+      System.out.println("Leia as notas dos alunos:");
+      media = ler.nextDouble();
+
+      if(media >= 0){
+        maior = media;
+        menor = media;
+        cont = 1;
+        soma = media;
+      }
+
+      while (media >=0){
+
+         System.out.printf(media);
+
+         if (media >= 0){
+
+            if(media > maior){
+
+               maior = media;
+            }
+            if (media < menor){ 
+
+               menor = media;
+
+            }
+
+            soma = soma + media;
+
+            cont = cont + 1;
+
+         }
+
+      
+
+      media = soma / cont;
+
+      System.out.printf("Média da Turma: "+ media);
+      System.out.printf("Maior: "+ maior);
+      System.out.printf("Menor: "+ menor);
+
+   }else{
+
+      System.out.printls("Sem dados");
+
+   }
+     
+  }
+}
+
+   
+

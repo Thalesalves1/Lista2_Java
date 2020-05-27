@@ -1,0 +1,53 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+
+    Scanner ler = new Scanner(System.in);
+
+    int num1; 
+    int par; 
+    int impar; 
+    int inte;
+    
+
+  System.out.println("Digite o número: ");
+  num1 = ler.nextInt();
+
+  System.out.println("Digite quantos números pares deseja: ");
+  par = ler.nextInt();
+
+  System.out.println ("Digite quantos números impares deseja: ");
+  impar = ler.nextInt();
+
+   if (par < num1) and (impar < num1){
+
+      inte =  1;
+
+      System.out.println("Os"+ par + " primeiros pares são:\t ")
+
+      for (inte = 2; inte <= (par*2); inte++){
+
+         System.out.println(inte);
+
+      }
+
+      System.out.printf ("Os"+ impar+ " primeiros ímpares são:\t ");
+
+      for (inte = 1; inte <= (impar*2); inte++)
+
+         System.out.printf(inte);
+
+      }
+
+      }else
+
+      System.out.println("O numero é maior que o desejado");
+
+   }
+     
+  }
+}
+
+   
+
